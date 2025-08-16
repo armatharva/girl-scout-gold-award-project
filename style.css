@@ -1,0 +1,106 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  line-height: 1.6;
+  background: #fff8fb;
+  color: #333;
+}
+
+header {
+  background: #e75480;
+  color: white;
+  padding: 1rem 0;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+  max-width: 1000px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .logo {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.nav-links a {
+  color: white;
+  margin-left: 15px;
+  text-decoration: none;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+.hero {
+  background: #ffe6ef;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.cta {
+  display: inline-block;
+  background: #e75480;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+.cta:hover {
+  background: #d6456f;
+}
+
+.section {
+  padding: 2rem 0;
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.cols-2 {
+  grid-template-columns: 1fr 1fr;
+}
+
+.cols-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.card {
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+footer {
+  text-align: center;
+  background: #e75480;
+  color: white;
+  padding: 1rem 0;
+  margin-top: 2rem;
+}
+
+.gold-award-badge {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  text-align: center;
+  font-size: 0.8rem;
+  color: #333;
+}
+
+.gold-award-badge img {
+  width: 60px;
+  display: block;
+  margin: auto;
+}
