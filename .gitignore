@@ -1,7 +1,20 @@
-# OS junk
+# OS files
 .DS_Store
 Thumbs.db
 
-# Editors
-.vscode/
-.idea/
+# Node or Python (if you experiment locally later)
+node_modules/
+__pycache__/
+
+# Logs
+*.log
+
+# Figma exports or large design files
+*.fig
+*.psd
+*.ai
+
+# Video raw files if too big (GitHub Pages has 100MB limit per file)
+*.mov
+*.avi
+
