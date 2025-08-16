@@ -8,43 +8,61 @@
 </head>
 <body>
   <header>
-    <div class="container">
+    <div class="container nav-container">
+      <div class="logo">MenstruationEdu</div>
       <nav>
-        <div class="logo">MenstruationEdu</div>
-        <div class="nav-links">
-          <a href="index.html">Home</a>
-          <a href="video.html">Video Demo</a>
-          <a href="products.html">Products</a>
-          <a href="hygiene.html">Hygiene Tips</a>
-          <a href="cleanliness.html">Why Cleanliness</a>
-          <a href="reproductive.html">Reproductive System</a>
-          <a href="qa.html">Q&A (Doctor)</a>
-          <a href="myths.html">Myths & Facts</a>
-        </div>
+        <a href="index.html">Home</a>
+        <a href="video.html">Video Demo</a>
+        <a href="products.html">Products</a>
+        <a href="hygiene.html">Hygiene Tips</a>
+        <a href="cleanliness.html">Cleanliness</a>
+        <a href="reproductive.html">Reproductive System</a>
+        <a href="qa.html">Q&A</a>
+        <a href="myths.html" class="active">Myths</a>
       </nav>
     </div>
   </header>
 
-  <main>
+  <section class="hero">
     <div class="container">
       <h1>Myths & Facts</h1>
+      <p>Bust the myths. Know the facts. Feel confident.</p>
+    </div>
+  </section>
+
+  <section class="info-cards">
+    <div class="container grid">
+      <div class="card">
+        <h3>Myth: You can’t play sports.</h3>
+        <p><strong>Fact:</strong> You can. Exercise may reduce cramps and boost mood.</p>
+      </div>
+      <div class="card">
+        <h3>Myth: Period blood is “dirty.”</h3>
+        <p><strong>Fact:</strong> It’s a healthy shedding of the uterine lining.</p>
+      </div>
+      <div class="card">
+        <h3>Myth: You shouldn’t bathe.</h3>
+        <p><strong>Fact:</strong> Bathing or showering helps comfort and hygiene.</p>
+      </div>
+      <div class="card">
+        <h3>Myth: All cycles are 28 days.</h3>
+        <p><strong>Fact:</strong> Normal ranges vary widely person to person.</p>
+      </div>
+      <div class="card">
+        <h3>Myth: Tampons always cause TSS.</h3>
+        <p><strong>Fact:</strong> TSS is rare. Use the lowest absorbency and change every 4–8 hours.</p>
+      </div>
       <div class="card">
         <h3>Myth: You can’t swim on your period.</h3>
-        <p><strong>Fact:</strong> You can swim while using tampons or menstrual cups.</p>
-      </div>
-      <div class="card">
-        <h3>Myth: Period blood is dirty.</h3>
-        <p><strong>Fact:</strong> It’s just blood and tissue from the uterus — completely natural.</p>
-      </div>
-      <div class="card">
-        <h3>Myth: Having your period means you’re sick.</h3>
-        <p><strong>Fact:</strong> Periods are a healthy sign your body is working normally.</p>
+        <p><strong>Fact:</strong> You can with a tampon or menstrual cup.</p>
       </div>
     </div>
-  </main>
+  </section>
 
   <footer>
-    <div class="container">© <span id="year"></span> MenstruationEdu. Educational use only.</div>
+    <div class="container">
+      <p>© <span id="year"></span> MenstruationEdu | Girl Scouts Gold Award Project</p>
+    </div>
   </footer>
 
   <div class="gold-award-badge">
@@ -52,6 +70,6 @@
     <div>Girl Scouts Gold Award</div>
   </div>
 
-  <script src="script.js"></script>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
 </body>
 </html>
