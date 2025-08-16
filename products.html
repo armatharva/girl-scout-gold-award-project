@@ -8,56 +8,58 @@
 </head>
 <body>
   <header>
-    <div class="container">
+    <div class="container nav-container">
+      <div class="logo">MenstruationEdu</div>
       <nav>
-        <div class="logo">MenstruationEdu</div>
-        <div class="nav-links">
-          <a href="index.html">Home</a>
-          <a href="video.html">Video Demo</a>
-          <a href="products.html">Products</a>
-          <a href="hygiene.html">Hygiene Tips</a>
-          <a href="cleanliness.html">Why Cleanliness</a>
-          <a href="reproductive.html">Reproductive System</a>
-          <a href="qa.html">Q&A (Doctor)</a>
-          <a href="myths.html">Myths & Facts</a>
-        </div>
+        <a href="index.html">Home</a>
+        <a href="video.html">Video Demo</a>
+        <a href="products.html" class="active">Products</a>
+        <a href="hygiene.html">Hygiene Tips</a>
+        <a href="cleanliness.html">Cleanliness</a>
+        <a href="reproductive.html">Reproductive System</a>
+        <a href="qa.html">Q&A</a>
+        <a href="myths.html">Myths</a>
       </nav>
     </div>
   </header>
 
-  <main>
+  <section class="hero">
     <div class="container">
-      <h1>Period Products</h1>
-      <div class="grid cols-2">
-        <div class="card">
-          <h3>Pads</h3>
-          <p>Easy to use, widely available, but produce more waste.</p>
-        </div>
-        <div class="card">
-          <h3>Tampons</h3>
-          <p>Discreet, can swim with them, but risk of TSS if not changed regularly.</p>
-        </div>
-        <div class="card">
-          <h3>Menstrual Cups</h3>
-          <p>Reusable, eco-friendly, lasts up to 10 years, but learning curve is higher.</p>
-        </div>
-        <div class="card">
-          <h3>Period Underwear</h3>
-          <p>Comfortable, washable, great backup, but expensive upfront.</p>
-        </div>
+      <h1>Menstrual Products</h1>
+      <p>Compare pads, tampons, cups, and period underwear — learn the pros, cons, cost, and eco-friendliness.</p>
+    </div>
+  </section>
+
+  <section class="info-cards">
+    <div class="container grid">
+      <div class="card">
+        <h3>Pads</h3>
+        <p>Easy to use, disposable, available everywhere. Must be changed every 3–4 hours.</p>
+      </div>
+      <div class="card">
+        <h3>Tampons</h3>
+        <p>Inserted inside the vagina, more discreet. Change every 4–6 hours.</p>
+      </div>
+      <div class="card">
+        <h3>Menstrual Cups</h3>
+        <p>Reusable, eco-friendly, lasts years. Requires comfort with insertion.</p>
+      </div>
+      <div class="card">
+        <h3>Period Underwear</h3>
+        <p>Washable, eco-friendly. Can be used alone or as backup.</p>
       </div>
     </div>
-  </main>
+  </section>
 
   <footer>
-    <div class="container">© <span id="year"></span> MenstruationEdu. Educational use only.</div>
+    <div class="container">
+      <p>© <span id="year"></span> MenstruationEdu | Girl Scouts Gold Award Project</p>
+    </div>
   </footer>
-
   <div class="gold-award-badge">
     <img src="gold-award.png" alt="Girl Scouts Gold Award Logo">
     <div>Girl Scouts Gold Award</div>
   </div>
-
-  <script src="script.js"></script>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
 </body>
 </html>
