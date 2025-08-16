@@ -8,45 +8,54 @@
 </head>
 <body>
   <header>
-    <div class="container">
+    <div class="container nav-container">
+      <div class="logo">MenstruationEdu</div>
       <nav>
-        <div class="logo">MenstruationEdu</div>
-        <div class="nav-links">
-          <a href="index.html">Home</a>
-          <a href="video.html">Video Demo</a>
-          <a href="products.html">Products</a>
-          <a href="hygiene.html">Hygiene Tips</a>
-          <a href="cleanliness.html">Why Cleanliness</a>
-          <a href="reproductive.html">Reproductive System</a>
-          <a href="qa.html">Q&A (Doctor)</a>
-          <a href="myths.html">Myths & Facts</a>
-        </div>
+        <a href="index.html">Home</a>
+        <a href="video.html">Video Demo</a>
+        <a href="products.html">Products</a>
+        <a href="hygiene.html" class="active">Hygiene Tips</a>
+        <a href="cleanliness.html">Cleanliness</a>
+        <a href="reproductive.html">Reproductive System</a>
+        <a href="qa.html">Q&A</a>
+        <a href="myths.html">Myths</a>
       </nav>
     </div>
   </header>
 
-  <main>
+  <section class="hero">
     <div class="container">
       <h1>Hygiene Tips</h1>
-      <ul>
-        <li>Change pads/tampons every 4–6 hours.</li>
-        <li>Wash reusable products with warm water and soap.</li>
-        <li>Always wash your hands before and after handling products.</li>
-        <li>Wear clean underwear daily.</li>
-        <li>Avoid scented products — they can cause irritation.</li>
-      </ul>
+      <p>Good hygiene during your period keeps you comfortable and healthy.</p>
     </div>
-  </main>
+  </section>
+
+  <section class="info-cards">
+    <div class="container grid">
+      <div class="card">
+        <h3>Change Products Regularly</h3>
+        <p>Pads and tampons should be changed every 3–6 hours to avoid odor and infection.</p>
+      </div>
+      <div class="card">
+        <h3>Wash with Water</h3>
+        <p>Clean your genital area with plain water, avoid harsh soaps.</p>
+      </div>
+      <div class="card">
+        <h3>Carry Extras</h3>
+        <p>Keep spare pads or tampons in your bag just in case your period starts unexpectedly.</p>
+      </div>
+    </div>
+  </section>
 
   <footer>
-    <div class="container">© <span id="year"></span> MenstruationEdu. Educational use only.</div>
+    <div class="container">
+      <p>© <span id="year"></span> MenstruationEdu | Girl Scouts Gold Award Project</p>
+    </div>
   </footer>
-
   <div class="gold-award-badge">
     <img src="gold-award.png" alt="Girl Scouts Gold Award Logo">
     <div>Girl Scouts Gold Award</div>
   </div>
-
-  <script src="script.js"></script>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
 </body>
 </html>
