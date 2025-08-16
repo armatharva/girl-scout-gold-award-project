@@ -8,43 +8,69 @@
 </head>
 <body>
   <header>
-    <div class="container">
+    <div class="container nav-container">
+      <div class="logo">MenstruationEdu</div>
       <nav>
-        <div class="logo">MenstruationEdu</div>
-        <div class="nav-links">
-          <a href="index.html">Home</a>
-          <a href="video.html">Video Demo</a>
-          <a href="products.html">Products</a>
-          <a href="hygiene.html">Hygiene Tips</a>
-          <a href="cleanliness.html">Why Cleanliness</a>
-          <a href="reproductive.html">Reproductive System</a>
-          <a href="qa.html">Q&A (Doctor)</a>
-          <a href="myths.html">Myths & Facts</a>
-        </div>
+        <a href="index.html">Home</a>
+        <a href="video.html">Video Demo</a>
+        <a href="products.html">Products</a>
+        <a href="hygiene.html">Hygiene Tips</a>
+        <a href="cleanliness.html">Cleanliness</a>
+        <a href="reproductive.html">Reproductive System</a>
+        <a href="qa.html" class="active">Q&A</a>
+        <a href="myths.html">Myths</a>
       </nav>
     </div>
   </header>
 
-  <main>
+  <section class="hero">
     <div class="container">
-      <h1>Q&A with Dr. Vani Venkatachalam</h1>
-      <div class="qa">
-        <h3>Q: How often should I change my pad?</h3>
-        <p>A: Every 4–6 hours to prevent odor and infection.</p>
-      </div>
-      <div class="qa">
-        <h3>Q: Can I exercise during my period?</h3>
-        <p>A: Yes! Exercise can help reduce cramps and boost mood.</p>
-      </div>
-      <div class="qa">
-        <h3>Q: Are irregular periods normal?</h3>
-        <p>A: They can be, especially in the first few years after starting your period. If you’re concerned, check with a doctor.</p>
-      </div>
+      <h1>Q&A with a Pediatrician</h1>
+      <p>Friendly answers to common questions (educational only; not medical advice).</p>
     </div>
-  </main>
+  </section>
+
+  <section class="container">
+    <div class="faq">
+      <details class="card">
+        <summary>Why are my periods different from my friends?</summary>
+        <p>Every body is different. Flow, length, and symptoms can vary a lot and still be normal.</p>
+      </details>
+      <details class="card">
+        <summary>Is it bad if I skip a month sometimes?</summary>
+        <p>It can be normal early on. If you miss several months or have other symptoms, see a clinician.</p>
+      </details>
+      <details class="card">
+        <summary>Why do I get moody before my period?</summary>
+        <p>Hormone changes can affect mood. Sleep, hydration, and movement help; talk to a doctor if severe.</p>
+      </details>
+      <details class="card">
+        <summary>Are clots normal?</summary>
+        <p>Small clots can be normal. If you’re soaking products in under an hour or passing large clots, get care.</p>
+      </details>
+      <details class="card">
+        <summary>Can I swim or play sports?</summary>
+        <p>Yes! Tampons or cups for swimming; pads work great for most other sports.</p>
+      </details>
+      <details class="card">
+        <summary>What if I bleed through at school?</summary>
+        <p>It happens. Tie a sweatshirt around your waist, change your pad, and keep a spare in your bag.</p>
+      </details>
+      <details class="card">
+        <summary>What if I don’t have products right now?</summary>
+        <p>Use clean, soft cloth temporarily; wash and fully dry before reuse. Ask a trusted adult or school nurse.</p>
+      </details>
+      <details class="card">
+        <summary>There’s an odor—should I worry?</summary>
+        <p>Mild odor can be normal. Strong/fishy odor or discharge may need medical attention.</p>
+      </details>
+    </div>
+  </section>
 
   <footer>
-    <div class="container">© <span id="year"></span> MenstruationEdu. Educational use only.</div>
+    <div class="container">
+      <p>© <span id="year"></span> MenstruationEdu | Girl Scouts Gold Award Project</p>
+    </div>
   </footer>
 
   <div class="gold-award-badge">
@@ -52,6 +78,6 @@
     <div>Girl Scouts Gold Award</div>
   </div>
 
-  <script src="script.js"></script>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
 </body>
 </html>
