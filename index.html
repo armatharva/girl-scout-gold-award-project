@@ -1,48 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>MenstruationEdu — Home</title>
-  <!-- your CSS is linked; nav and content structure is intact -->
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
   <header>
-    <!-- Logo and nav links: Home, Video Demo, Products, Hygiene Tips, Why Cleanliness, Reproductive System, Q&A, Myths & Facts -->
+    <div class="container">
+      <nav>
+        <div class="logo">MenstruationEdu</div>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="video.html">Video Demo</a>
+          <a href="products.html">Products</a>
+          <a href="hygiene.html">Hygiene Tips</a>
+          <a href="cleanliness.html">Why Cleanliness</a>
+          <a href="reproductive.html">Reproductive System</a>
+          <a href="qa.html">Q&A (Doctor)</a>
+          <a href="myths.html">Myths & Facts</a>
+        </div>
+      </nav>
+    </div>
   </header>
 
   <main>
     <section class="hero">
-      <h1>Learn about periods with confidence</h1>
-      <p>An accessible, youth-friendly resource covering products, hygiene, body basics, and answers from a pediatrician — built for a Girl Scouts Gold Award project.</p>
-      <a class="cta" href="video.html">Start with the Pad Demo →</a>
+      <div class="container">
+        <h1>Learn about periods with confidence 🌸</h1>
+        <p>An accessible, youth-friendly resource covering products, hygiene, body basics, and answers from a pediatrician — built for a Girl Scouts Gold Award project.</p>
+        <a class="cta" href="video.html">Start with the Pad Demo →</a>
+      </div>
     </section>
 
     <section class="section">
-      <div class="grid cols-3">
+      <div class="container grid cols-3">
         <div class="card">
           <h3>Watch & Learn</h3>
-          <p>A short demo video and step-by-step photos show how to put together and wear a pad correctly.</p>
+          <p class="muted">A short demo video and step-by-step photos show how to put together and wear a pad correctly.</p>
         </div>
         <div class="card">
           <h3>Compare Products</h3>
-          <p>Pads, tampons, menstrual cups, and period underwear — pros/cons, cost, and eco-friendliness.</p>
+          <p class="muted">Pads, tampons, menstrual cups, and period underwear — pros/cons, cost, and eco-friendliness.</p>
         </div>
         <div class="card">
           <h3>Doctor Q&A</h3>
-          <p>Common questions answered by pediatrician Dr. Vani Venkatachalam of Care &amp; Cure Pediatrics.</p>
+          <p class="muted">Common questions answered by pediatrician Dr. Vani Venkatachalam of Care &amp; Cure Pediatrics.</p>
         </div>
       </div>
     </section>
   </main>
 
   <footer>
-    <div>© MenstruationEdu. Educational use only.</div>
+    <div class="container">© <span id="year"></span> MenstruationEdu. Educational use only.</div>
   </footer>
 
   <!-- Gold Award badge -->
   <div class="gold-award-badge">
-    <!-- Logo image and text captured -->
+    <img src="gold-award.png" alt="Girl Scouts Gold Award Logo">
+    <div>Girl Scouts Gold Award</div>
   </div>
-</body>
-</html>
 
