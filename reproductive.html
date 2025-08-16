@@ -8,39 +8,58 @@
 </head>
 <body>
   <header>
-    <div class="container">
+    <div class="container nav-container">
+      <div class="logo">MenstruationEdu</div>
       <nav>
-        <div class="logo">MenstruationEdu</div>
-        <div class="nav-links">
-          <a href="index.html">Home</a>
-          <a href="video.html">Video Demo</a>
-          <a href="products.html">Products</a>
-          <a href="hygiene.html">Hygiene Tips</a>
-          <a href="cleanliness.html">Why Cleanliness</a>
-          <a href="reproductive.html">Reproductive System</a>
-          <a href="qa.html">Q&A (Doctor)</a>
-          <a href="myths.html">Myths & Facts</a>
-        </div>
+        <a href="index.html">Home</a>
+        <a href="video.html">Video Demo</a>
+        <a href="products.html">Products</a>
+        <a href="hygiene.html">Hygiene Tips</a>
+        <a href="cleanliness.html">Cleanliness</a>
+        <a href="reproductive.html" class="active">Reproductive System</a>
+        <a href="qa.html">Q&A</a>
+        <a href="myths.html">Myths</a>
       </nav>
     </div>
   </header>
 
-  <main>
+  <section class="hero">
     <div class="container">
-      <h1>The Reproductive System</h1>
-      <p>The menstrual cycle is part of the female reproductive system. It involves the uterus, ovaries, fallopian tubes, and vagina. Every month, the body prepares for a possible pregnancy, and if it doesn’t happen, the uterus sheds its lining — that’s your period.</p>
+      <h1>The Female Reproductive System</h1>
+      <p>Understanding your body helps you feel more confident and prepared.</p>
     </div>
-  </main>
+  </section>
+
+  <section class="info-cards">
+    <div class="container grid">
+      <div class="card">
+        <h3>Uterus</h3>
+        <p>The organ where a fertilized egg can grow. During periods, the lining sheds if there’s no pregnancy.</p>
+      </div>
+      <div class="card">
+        <h3>Ovaries</h3>
+        <p>Release eggs each month and produce hormones like estrogen and progesterone.</p>
+      </div>
+      <div class="card">
+        <h3>Fallopian Tubes</h3>
+        <p>Pathways that connect the ovaries to the uterus. Fertilization usually happens here.</p>
+      </div>
+      <div class="card">
+        <h3>Vagina</h3>
+        <p>The passage leading from the uterus to outside the body. Menstrual blood flows through here.</p>
+      </div>
+    </div>
+  </section>
 
   <footer>
-    <div class="container">© <span id="year"></span> MenstruationEdu. Educational use only.</div>
+    <div class="container">
+      <p>© <span id="year"></span> MenstruationEdu | Girl Scouts Gold Award Project</p>
+    </div>
   </footer>
-
   <div class="gold-award-badge">
     <img src="gold-award.png" alt="Girl Scouts Gold Award Logo">
     <div>Girl Scouts Gold Award</div>
   </div>
-
-  <script src="script.js"></script>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
 </body>
 </html>
