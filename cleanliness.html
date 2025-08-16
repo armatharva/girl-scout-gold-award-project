@@ -3,44 +3,59 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Why Cleanliness — MenstruationEdu</title>
+  <title>Why Cleanliness Matters — MenstruationEdu</title>
   <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
   <header>
-    <div class="container">
+    <div class="container nav-container">
+      <div class="logo">MenstruationEdu</div>
       <nav>
-        <div class="logo">MenstruationEdu</div>
-        <div class="nav-links">
-          <a href="index.html">Home</a>
-          <a href="video.html">Video Demo</a>
-          <a href="products.html">Products</a>
-          <a href="hygiene.html">Hygiene Tips</a>
-          <a href="cleanliness.html">Why Cleanliness</a>
-          <a href="reproductive.html">Reproductive System</a>
-          <a href="qa.html">Q&A (Doctor)</a>
-          <a href="myths.html">Myths & Facts</a>
-        </div>
+        <a href="index.html">Home</a>
+        <a href="video.html">Video Demo</a>
+        <a href="products.html">Products</a>
+        <a href="hygiene.html">Hygiene Tips</a>
+        <a href="cleanliness.html" class="active">Cleanliness</a>
+        <a href="reproductive.html">Reproductive System</a>
+        <a href="qa.html">Q&A</a>
+        <a href="myths.html">Myths</a>
       </nav>
     </div>
   </header>
 
-  <main>
+  <section class="hero">
     <div class="container">
       <h1>Why Cleanliness Matters</h1>
-      <p>Maintaining cleanliness during menstruation helps prevent infections and keeps you comfortable. Good hygiene can reduce odor, irritation, and skin problems.</p>
+      <p>Clean habits prevent infections and help you feel confident during your period.</p>
     </div>
-  </main>
+  </section>
+
+  <section class="info-cards">
+    <div class="container grid">
+      <div class="card">
+        <h3>Preventing Infections</h3>
+        <p>Changing products on time prevents bacteria growth that may cause UTIs or rashes.</p>
+      </div>
+      <div class="card">
+        <h3>Boosts Comfort</h3>
+        <p>Good hygiene helps you stay fresh, reducing discomfort throughout the day.</p>
+      </div>
+      <div class="card">
+        <h3>Confidence</h3>
+        <p>Being prepared with clean supplies can reduce anxiety and embarrassment.</p>
+      </div>
+    </div>
+  </section>
 
   <footer>
-    <div class="container">© <span id="year"></span> MenstruationEdu. Educational use only.</div>
+    <div class="container">
+      <p>© <span id="year"></span> MenstruationEdu | Girl Scouts Gold Award Project</p>
+    </div>
   </footer>
-
   <div class="gold-award-badge">
     <img src="gold-award.png" alt="Girl Scouts Gold Award Logo">
     <div>Girl Scouts Gold Award</div>
   </div>
-
-  <script src="script.js"></script>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
 </body>
 </html>
