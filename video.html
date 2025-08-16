@@ -7,46 +7,40 @@
   <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
+  <!-- Navbar -->
   <header>
-    <div class="container">
+    <div class="container nav-container">
+      <div class="logo">MenstruationEdu</div>
       <nav>
-        <div class="logo">MenstruationEdu</div>
-        <div class="nav-links">
-          <a href="index.html">Home</a>
-          <a href="video.html">Video Demo</a>
-          <a href="products.html">Products</a>
-          <a href="hygiene.html">Hygiene Tips</a>
-          <a href="cleanliness.html">Why Cleanliness</a>
-          <a href="reproductive.html">Reproductive System</a>
-          <a href="qa.html">Q&A (Doctor)</a>
-          <a href="myths.html">Myths & Facts</a>
-        </div>
+        <a href="index.html">Home</a>
+        <a href="video.html" class="active">Video Demo</a>
+        <a href="products.html">Products</a>
+        <a href="hygiene.html">Hygiene Tips</a>
+        <a href="cleanliness.html">Cleanliness</a>
+        <a href="reproductive.html">Reproductive System</a>
+        <a href="qa.html">Q&A</a>
+        <a href="myths.html">Myths</a>
       </nav>
     </div>
   </header>
 
-  <main>
+  <!-- Page Content -->
+  <section class="hero">
     <div class="container">
-      <h1>Pad Application Demo</h1>
+      <h1>How to Wear a Pad</h1>
+      <p>Watch this short demonstration video to learn step-by-step how to use a pad correctly.</p>
       <video controls width="600">
-        <source src="IMG_1175 (6).mov" type="video/mp4">
-        Your browser does not support the video tag.
+        <source src="video.mp4" type="video/mp4">
+        Your browser does not support this video.
       </video>
-
-      <h2>Step-by-Step Instructions</h2>
-      <ol>
-        <li>Wash your hands thoroughly with soap and water</li>
-        <li>Remove the pad from its wrapper and unfold it completely</li>
-        <li>Peel off the backing strip to expose the adhesive</li>
-        <li>Center the pad in your underwear with the adhesive side down</li>
-        <li>Press down firmly to ensure the pad sticks properly</li>
-        <li>If the pad has wings, wrap them around the underwear</li>
-      </ol>
     </div>
-  </main>
+  </section>
 
+  <!-- Footer -->
   <footer>
-    <div class="container">© <span id="year"></span> MenstruationEdu. Educational use only.</div>
+    <div class="container">
+      <p>© <span id="year"></span> MenstruationEdu | Girl Scouts Gold Award Project</p>
+    </div>
   </footer>
 
   <div class="gold-award-badge">
@@ -54,6 +48,6 @@
     <div>Girl Scouts Gold Award</div>
   </div>
 
-  <script src="script.js"></script>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
 </body>
 </html>
