@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MenstruationEdu — Video Demo</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<header>
+  <div class="container">
+    <nav>
+      <div class="logo">MenstruationEdu</div>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="video.html">Video Demo</a>
+        <a href="products.html">Products</a>
+        <a href="hygiene.html">Hygiene Tips</a>
+        <a href="cleanliness.html">Why Cleanliness</a>
+        <a href="reproductive.html">Reproductive System</a>
+        <a href="qa.html">Q&A (Doctor)</a>
+        <a href="myths.html">Myths & Facts</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="section">
+    <div class="container grid" style="grid-template-columns: 1.2fr 1fr; gap: 24px;">
+      <div class="card">
+        <!-- Replace src with your actual video file or YouTube embed -->
+        <video controls width="100%" poster="" style="border-radius: 12px;">
+          <source src="your-pad-demo-video.mp4" type="video/mp4"/>
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="card">
+        <h2>Step-by-Step Instructions</h2>
+        <ol class="ol" style="margin-top:10px;">
+          <li>Wash your hands thoroughly with soap and water.</li>
+          <li>Remove the pad from its wrapper and unfold it completely.</li>
+          <li>Peel off the backing strip to expose the adhesive.</li>
+          <li>Center the pad in your underwear with the adhesive side down.</li>
+          <li>Press down firmly to help it stick properly.</li>
+          <li>If the pad has wings, wrap them around the underwear.</li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt">
+    <div class="container">
+      <h3>Accessibility</h3>
+      <p class="muted">Below are still photos showing each step for anyone who learns better with pictures or needs captions.</p>
+      <div class="grid cols-3" style="margin-top:12px;">
+        <div class="card"><strong>Step 1.</strong> Handwashing (photo placeholder)</div>
+        <div class="card"><strong>Step 2.</strong> Unwrap &amp; unfold</div>
+        <div class="card"><strong>Step 3.</strong> Peel backing</div>
+        <div class="card"><strong>Step 4.</strong> Center in underwear</div>
+        <div class="card"><strong>Step 5.</strong> Press down</div>
+        <div class="card"><strong>Step 6.</strong> Wrap wings</div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">© <span id="year"></span> MenstruationEdu.</div>
+</footer>
+
+<div class="gold-award-badge">
+  <img src="gold-award.png" alt="Girl Scouts Gold Award Logo">
+  <div>Girl Scouts Gold Award</div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
